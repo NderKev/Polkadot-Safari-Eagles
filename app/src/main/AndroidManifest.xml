@@ -27,8 +27,21 @@
             android:name=".StartScreenTwo"
             android:exported="false" />
         <activity
-            android:name=".StartScreenOne"
+            android:name=".MainActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".StartScreenOne"
+            android:exported="true">
+            <!--on below line we are setting main activity 2 as a
+                launcher activity on below line-->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
     </application>
 
 </manifest>
