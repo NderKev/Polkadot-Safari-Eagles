@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpPatient">
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_width="414dp"
+        android:layout_height="529dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="1dp">
+
+        <ImageView
+            android:id="@+id/txtEmail"
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:src="@drawable/email"
+            tools:layout_editor_absoluteY="20dp" />
+
+        <EditText
+            android:id="@+id/edtEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtEmail"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="34dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <ImageView
+            android:id="@+id/txtPhone"
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/edtEmailAddress"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="34dp"
+            android:src="@drawable/phone"
+            android:text="Phone" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPhone"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="29dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <ImageView
+            android:id="@+id/txtPassword"
+            android:layout_width="65dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/edtPhone"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="34dp"
+            android:src="@drawable/passwordsignup" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPassword"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="29dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/txtPasswordConfirm"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/edtPassword"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/confirmpassword"
+            android:text="Password Confirm" />
+
+
+        <EditText
+            android:id="@+id/edtPasswordConfirm"
+            android:layout_width="356dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtPasswordConfirm"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="32dp"
+            android:ems="10"
+            android:inputType="textPassword" />
+
+        <ImageButton
+            android:id="@+id/btnSignUp"
+            android:layout_width="389dp"
+            android:layout_height="49dp"
+            android:layout_below="@+id/edtPasswordConfirm"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="19dp"
+            android:background="@color/transparent"
+            android:src="@drawable/signup" />
+
+        <ImageView
+            android:id="@+id/txtDont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnSignUp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="97dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="182dp"
+            android:src="@drawable/alreadyhaveaccount" />
+
+
+        <ImageButton
+            android:id="@+id/btnlogin"
+            android:layout_width="80dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/btnSignUp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="119dp"
+            android:background="@color/transparent"
+            android:src="@drawable/logintwo" />
+
+        <RelativeLayout
+            android:id="@+id/orsignupwith"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/btnlogin"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="100dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="115dp"
+                android:src="@drawable/linefour">
+
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="50dp"
+                android:src="@drawable/orsignupwithtwo">
+
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="15dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/linefour">
+
+
+            </ImageView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/belowlinks"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/orsignupwith"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:background="@drawable/groupsixtysix">
+
+            <Button
+                android:id="@+id/btnGoogle"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/transparent" />
+
+            <Button
+                android:id="@+id/btnApple"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="60dp"
+                android:background="@color/transparent" />
+
+            <Button
+                android:id="@+id/btnFacebook"
+                android:layout_width="48dp"
+                android:layout_height="38dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="61dp"
+                android:background="@color/transparent" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other"
+        android:layout_width="match_parent"
+        android:layout_height="192dp"
+        android:layout_below="@id/form"
+        android:background="#052570"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-3dp">
+
+        <ImageView
+            android:id="@+id/areyouadoctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/areyouadoctor">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/millions"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/areyouadoctor"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="100dp"
+            android:src="@drawable/milions">
+
+        </ImageView>
+
+        <ImageButton
+            android:id="@+id/btnJoin"
+            android:layout_width="208dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/millions"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginEnd="100dp"
+            android:background="@color/transparent"
+            android:src="@drawable/joinnow"
+            android:text="Join Now" />
+    </RelativeLayout>
+
+</RelativeLayout>

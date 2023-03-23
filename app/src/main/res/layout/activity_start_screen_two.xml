@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartScreenTwo"
+    android:background="@color/purple"
+    >
+    <ImageButton
+        android:id="@+id/btnSkip"
+        android:layout_width="53dp"
+        android:layout_height="26dp"
+        android:background="@color/transparent"
+        android:src="@drawable/skip"
+        android:text="Skip"
+        android:layout_marginStart="325dp"
+        android:layout_marginTop="18dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="26dp" />
+
+    <ImageButton
+        android:id="@+id/btnInternet"
+        android:layout_width="28dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="370dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent"
+        android:src="@drawable/earthglobe"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="367dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageButton
+        android:id="@+id/btndropdownn"
+        android:layout_width="28dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="390dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/transparent"
+        android:src="@drawable/expandarrow"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="367dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@drawable/ecllipse"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="55dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="55dp"
+        app:srcCompat="@drawable/healthpassportbro"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="102dp" />
+
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/securedpatientsrecords"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@id/imageView5"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        tools:layout_editor_absoluteY="471dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/asnftcollections" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/uploadnmanage"
+        tools:ignore="MissingConstraints"
+        android:layout_below="@id/imageView2"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginStart="100dp"
+        tools:layout_editor_absoluteY="543dp" />
+
+
+
+    <ImageButton
+        android:id="@+id/btnNext"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="49dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/transparent"
+        android:src="@drawable/next"
+        android:textColor="@android:color/black"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="606dp" />
+
+
+</RelativeLayout>
