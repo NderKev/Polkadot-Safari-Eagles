@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoCall">
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="1dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/btnmessage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ellipsethirteen"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="26dp" />
+        <ImageView
+            android:id="@+id/imgmessage"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="55dp"
+            android:background="@color/transparent"
+            android:src="@drawable/volumemute"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="26dp" />
+        <ImageButton
+            android:id="@+id/btncall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ellipsetwelve"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="26dp" />
+        <ImageView
+            android:id="@+id/imgcall"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/transparent"
+            android:src="@drawable/vectorphone"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="26dp" />
+        <ImageButton
+            android:id="@+id/btnmute"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="40dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ellipsethirteen"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="26dp" />
+        <ImageView
+            android:id="@+id/imgmute"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="270dp"
+            android:layout_marginTop="55dp"
+            android:background="@color/transparent"
+            android:src="@drawable/video"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="324dp"
+            tools:layout_editor_absoluteY="26dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

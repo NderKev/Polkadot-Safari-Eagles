@@ -4,11 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
@@ -16,35 +14,33 @@ import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCanceledListener;
+import com.google.android.gms.tasks.Task;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeOne extends AppCompatActivity {
 
-    LoginResponce loginResponse;
-    TextView username;
     GoogleSignInOptions gso;
     GoogleSignInClient gsc;
     TextView name, email;
-    Button signOutBtn;
+    Button signOutBtn, chat;
 
-    ImageButton menu;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_home_one);
+
+//        name = findViewById(R.id.name);
+//        email = findViewById(R.id.email);
+//        signOutBtn = findViewById(R.id.signout);
 
 
-        Intent intent = getIntent();
-        if(intent.getExtras() != null){
-            loginResponse = (LoginResponce) intent.getSerializableExtra("data");
-            username.setText(loginResponse.getUsername());
-            Log.e("TAG", "=====>"+ loginResponse.getEmail());
-        }
+
         gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestEmail().build();
         gsc = GoogleSignIn.getClient(this,gso);
 
-        menu = findViewById(R.id.menu);
-        username = findViewById(R.id.username);
-        menu.setOnClickListener(view -> {
+        ImageButton buttonSecondActivity = findViewById(
+                R.id.menu
+        );
+        buttonSecondActivity.setOnClickListener(view -> {
             Intent secondActivityIntent = new Intent(
                     getApplicationContext(), HOmeTwo.class
             );
@@ -59,6 +55,16 @@ public class MainActivity extends AppCompatActivity {
             email.setText(personEmail);
         }
 
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent secondActivityIntent = new Intent(
+                        getApplicationContext(), ChatPage.class
+                );
+                startActivity(secondActivityIntent);
+            }
+        });
+
         signOutBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -70,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onCanceled() {
                         finish();
-                        startActivity(new Intent(MainActivity.this, LoginPage.class));
+                        startActivity(new Intent(HomeOne.this, LoginPage.class));
 
                     }
                 });

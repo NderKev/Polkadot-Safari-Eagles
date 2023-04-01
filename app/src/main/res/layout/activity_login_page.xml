@@ -20,7 +20,7 @@
         android:layout_width="413dp"
         android:layout_below="@id/imageView5"
         android:layout_height="429dp"
-        android:background="#052570"
+        android:background="#504AFA"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-2dp"
         tools:layout_editor_absoluteY="303dp">
@@ -40,13 +40,12 @@
             android:layout_width="300dp"
             android:layout_height="50dp"
             android:layout_below="@id/email"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
-            android:background="@color/white"
             android:ems="10"
             android:inputType="textEmailAddress" />
 
@@ -65,13 +64,12 @@
             android:id="@+id/edtPassword"
             android:layout_width="351dp"
             android:layout_height="50dp"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:layout_below="@id/password"
             android:layout_alignParentEnd="true"
             android:layout_marginStart="30dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="30dp"
-            android:background="@color/white"
             android:ems="10"
             android:inputType="textPassword" />
 
@@ -93,6 +91,7 @@
             android:layout_below="@+id/txtforgotpassword"
             android:layout_marginStart="21dp"
             android:layout_marginEnd="5dp"
+            android:layout_marginTop="10dp"
             android:background="@color/transparent"
             android:src="@drawable/signin" />
 
@@ -165,45 +164,20 @@
             </ImageView>
         </RelativeLayout>
 
-        <LinearLayout
-            android:id="@+id/belowlinks"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/btnLogin"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="40dp"
-            android:layout_marginEnd="100dp"
-            android:background="@drawable/groupsixtysix">
-
-            <Button
-                android:id="@+id/btnGoogle"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="60dp"
-                android:background="@color/transparent" />
-
-            <Button
-                android:id="@+id/btnApple"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="60dp"
-                android:background="@color/transparent" />
-
-            <Button
-                android:id="@+id/btnFacebook"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="61dp"
-                android:background="@color/transparent" />
-
-
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/orsignupwith"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="174dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="179dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/transparent"
+            android:src="@drawable/googleimage"></ImageButton>
 
 
     </RelativeLayout>

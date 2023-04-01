@@ -115,17 +115,52 @@
         android:layout_marginStart="100dp"
         tools:layout_editor_absoluteY="543dp" />
 
+    <LinearLayout
+        android:id="@+id/recs"
+        android:layout_width="300dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/imageView3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="80dp"
+        >
 
+        <ImageButton
+            android:id="@+id/recone"
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:background="@color/transparent"
+            android:src="@drawable/recone"
+            android:layout_marginStart="30dp"
+            ></ImageButton>
+        <ImageButton
+            android:id="@+id/rectwo"
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:background="@color/transparent"
+            android:src="@drawable/rectwo"
+            ></ImageButton>
+
+        <ImageButton
+            android:id="@+id/recthree"
+            android:layout_width="60dp"
+            android:layout_height="10dp"
+            android:background="@color/transparent"
+            android:src="@drawable/recone"
+            ></ImageButton>
+    </LinearLayout>
 
     <ImageButton
         android:id="@+id/btnNext"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/imageView3"
+        android:layout_below="@id/recs"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
         android:background="@color/transparent"
         android:src="@drawable/next"

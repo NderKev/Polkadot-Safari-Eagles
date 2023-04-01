@@ -9,8 +9,8 @@
     <RelativeLayout
         android:id="@+id/form"
         android:layout_width="414dp"
-        android:layout_height="529dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="510dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
@@ -21,7 +21,7 @@
             android:id="@+id/txtEmail"
             android:layout_width="60dp"
             android:layout_height="10dp"
-            android:layout_marginStart="15dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
             android:layout_marginEnd="30dp"
             android:src="@drawable/email"
@@ -34,9 +34,9 @@
             android:layout_below="@id/txtEmail"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="7dp"
-            android:layout_marginEnd="34dp"
+            android:layout_marginEnd="30dp"
             android:ems="10"
             android:inputType="textEmailAddress" />
 
@@ -45,7 +45,7 @@
             android:layout_width="60dp"
             android:layout_height="10dp"
             android:layout_below="@id/edtEmailAddress"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="7dp"
             android:layout_marginEnd="34dp"
             android:src="@drawable/phone"
@@ -58,9 +58,9 @@
             android:layout_below="@id/txtPhone"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="21dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="11dp"
-            android:layout_marginEnd="29dp"
+            android:layout_marginEnd="30dp"
             android:ems="10"
             android:inputType="phone" />
 
@@ -69,7 +69,7 @@
             android:layout_width="65dp"
             android:layout_height="10dp"
             android:layout_below="@id/edtPhone"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="34dp"
             android:src="@drawable/passwordsignup" />
@@ -81,21 +81,21 @@
             android:layout_below="@id/txtPassword"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="21dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="11dp"
-            android:layout_marginEnd="29dp"
+            android:layout_marginEnd="30dp"
             android:ems="10"
             android:inputType="textPassword" />
 
-        <ImageView
+        <TextView
             android:id="@+id/txtPasswordConfirm"
             android:layout_width="80dp"
             android:layout_height="20dp"
             android:layout_below="@id/edtPassword"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="6dp"
             android:src="@drawable/confirmpassword"
-            android:text="Password Confirm" />
+            android:text="Username" />
 
 
         <EditText
@@ -105,16 +105,16 @@
             android:layout_below="@id/txtPasswordConfirm"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
-            android:layout_marginStart="18dp"
+            android:layout_marginStart="30dp"
             android:layout_marginTop="9dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="30dp"
             android:ems="10"
             android:inputType="textPassword" />
 
         <ImageButton
             android:id="@+id/btnSignUp"
             android:layout_width="389dp"
-            android:layout_height="49dp"
+            android:layout_height="60dp"
             android:layout_below="@+id/edtPasswordConfirm"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
@@ -193,45 +193,21 @@
             </ImageView>
         </RelativeLayout>
 
-        <LinearLayout
-            android:id="@+id/belowlinks"
-            android:layout_width="200dp"
-            android:layout_height="30dp"
-            android:layout_below="@id/orsignupwith"
-            android:layout_marginStart="100dp"
-            android:layout_marginTop="20dp"
-            android:layout_marginEnd="100dp"
-            android:background="@drawable/groupsixtysix">
 
-            <Button
-                android:id="@+id/btnGoogle"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="60dp"
-                android:background="@color/transparent" />
-
-            <Button
-                android:id="@+id/btnApple"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_marginEnd="30dp"
-                android:layout_marginBottom="60dp"
-                android:background="@color/transparent" />
-
-            <Button
-                android:id="@+id/btnFacebook"
-                android:layout_width="48dp"
-                android:layout_height="38dp"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginBottom="61dp"
-                android:background="@color/transparent" />
-
-
-        </LinearLayout>
+        <ImageButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:layout_below="@+id/orsignupwith"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="174dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="179dp"
+            android:layout_marginBottom="20dp"
+            android:background="@color/transparent"
+            android:src="@drawable/googleimage"></ImageButton>
 
 
     </RelativeLayout>
@@ -241,7 +217,8 @@
         android:layout_width="match_parent"
         android:layout_height="192dp"
         android:layout_below="@id/form"
-        android:background="#052570"
+        android:background="#504AFA"
+        android:layout_marginBottom="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="-3dp">
