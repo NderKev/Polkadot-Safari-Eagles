@@ -1,0 +1,11 @@
+Introducing our groundbreaking dApp built on Unique Network's powerful SDKs for Polkadot! Our project, named SmartMedicare, revolutionizes the way patients and doctors interact by utilizing NFTs and blockchain technology to securely store and manage health information.
+
+With the Unique SDK, we are able to create individual wallets for patients and doctors, generating NFT collections that contain critical health data and consultation information. This allows for seamless, authenticated access to patient records and consultation details, all through a simple QR code scan.
+
+SmartMedicare also incorporates an AI nurse that gathers patient health symptoms in case of emergencies, ensuring timely medical attention. Doctors can accept consultations based on their location, and provide diagnoses and prescriptions, which are uploaded to IPFS and incorporated into the patient's consultation NFT using Unique SDK.
+
+Upon successful consultations, NFTs are minted to the OPAL network using the Unique SDK, and patients can rate their doctors based on service delivery, accumulating points for rewards. Doctors also rate the hospitals or medical facilities used to treat patients, providing valuable feedback for improvement.
+
+Real-life use cases for SmartMedicare are endless. Imagine a patient traveling to a foreign country, falling ill, and needing medical attention. With SmartMedicare, their health records and consultation details are securely accessible through a QR code, enabling accurate diagnosis and treatment. Doctors are incentivized with NFT rewards for delivering exceptional care, while patients accumulate rewards for referrals and consultations.
+
+SmartMedicare also has potential for telemedicine, remote consultations, and streamlined health record management in rural or underserved areas. The Unique SDK enables seamless creation and management of NFTs, allowing for secure, transparent, and efficient health data exchange.
