@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileDoc">
+
+    <ImageView
+        android:id="@+id/settings"
+        android:layout_width="165dp"
+        android:layout_height="126dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="100dp"
+        android:src="@drawable/ellipseseven"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/details"
+        android:layout_below="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="182dp"
+            android:layout_marginTop="30dp"
+            android:text="Username" />
+
+
+        <LinearLayout
+            android:id="@+id/EmailLayout"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:text="Email :" />
+            <TextView
+                android:id="@+id/txtemail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/PhoneLayout"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/EmailLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"
+                android:text="Phone :" />
+            <TextView
+                android:id="@+id/txtphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textSize="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="20dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
